@@ -34,3 +34,5 @@ function addTask() {
     taskList.appendChild(li);
     taskInput.value = '';
 }
+
+console.log("first")
