@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.bg{
+    background-image: url(/HD-wallpaper-rupee-money-coins-currency-dollar-india-paisa.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+}
+h1{
+    color: rgb(0, 204, 255);
+    background-color: #fff;
+    width: 330px;
+    text-align: center;
+    margin-top: 18rem;
+    margin-left: 37rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.25rem;
+}
+.converter{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    
+}
+#amount{
+    width: 12vw;
+    height: 2rem;
+    /* padding-right: 10px; */
+    margin-right: 1rem;
+    border-radius: 1.25rem;
+    padding-left: 1rem;
+}
+
+#fromCurrency{
+    width: 5vw;
+    height: 2rem;
+    /* padding-right: 10px; */
+    margin-right: 1rem;
+    margin-left: .5rem;
+    border-radius: 1.25rem;
+    padding-left: .81rem;
+    border: 2.2px solid black;
+
+}
+#toCurrency{
+    width: 5vw;
+    height: 2rem;
+    /* padding-right: 10px; */
+    margin-right: 1rem;
+    margin-left: .5rem;
+    border-radius: 1.25rem;
+    padding-left: .81rem;
+    border: 2.2px solid black;
+}
+
+button{
+    width: 6vw;
+    height: 2rem;
+    padding-right: 10px;
+    font-size: medium;
+    /* margin-right: 1rem; */
+    /* margin-left: .5rem; */
+    border-radius: 1.25rem;
+    padding-left: .81rem;
+    border: 2.2px solid black;
+}
+
+#result{
+
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    color: rgb(182, 63, 63);
+    font-size: larger;
+    font-weight: 600;
+    background-color: #fff;
+    width: 330px;
+    text-align: center;
+    margin-left: 37rem;
+    border-radius: 1.25rem;
+    padding-top: .41rem;
+    height: 2.5rem;
+}
