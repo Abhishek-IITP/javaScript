@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-gap: 20px;
+  }
+  .shape {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ff6347;
+  }
