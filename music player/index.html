@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player with Deezer API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="music-player">
+        <div class="cover">
+            <img id="cover-img" src="/Brown_Rang_song.jpg" alt="Album Cover">
+        </div>
+
+        <div class="player-controls">
+            <h2 id="song-title">Search for a Song</h2>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Enter song or artist">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <audio id="audio-player" controls hidden></audio>
+            
+            <div class="buttons">
+                <button id="prev" class="control-btn">&#9664;</button>
+                <button id="play" class="control-btn">▶</button>
+                <button id="next" class="control-btn">&#9654;</button>
+            </div>
+            
+            <div class="progress-container">
+                <input type="range" id="progress-bar" value="0" max="100">
+            </div>
+        </div>
+    </div>
+
+    <script src="indexx.js"></script>
+</body>
+</html>
