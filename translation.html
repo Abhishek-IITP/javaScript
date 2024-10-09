@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Translation Example</title>
+</head>
+<body>
+    <h1 id="title">Hello, Welcome to My Website!</h1>
+    <p id="content">This is a sample page that can be translated to different languages.</p>
+
+    <select id="language" onchange="translatePage()">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+    </select>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Hello, Welcome to My Website!",
+                content: "This is a sample page that can be translated to different languages."
+            },
+            es: {
+                title: "¡Hola, bienvenido a mi sitio web!",
+                content: "Esta es una página de muestra que se puede traducir a diferentes idiomas."
+            },
+            fr: {
+                title: "Bonjour, bienvenue sur mon site Web!",
+                content: "Ceci est une page d'exemple qui peut être traduite en différentes langues."
+            },
+            de: {
+                title: "Hallo, willkommen auf meiner Website!",
+                content: "Dies ist eine Beispielseite, die in verschiedene Sprachen übersetzt werden kann."
+            }
+        };
+
+        function translatePage() {
+            const lang = document.getElementById("language").value;
+            document.getElementById("title").innerText = translations[lang].title;
+            document.getElementById("content").innerText = translations[lang].content;
+        }
+    </script>
+</body>
+</html>
