@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+      <h3 class="faq-question" onclick="toggleAnswer(0)">How do I set up the project locally on my machine?</h3>
+      <div class="faq-answer">
+        <p>To set up the project locally, follow these steps:</p>
+        <ol>
+          <li>Clone the repository from GitHub:
+            <pre><code>git clone https://github.com/your-repo-url.git</code></pre>
+          </li>
+          <li>Navigate into the project directory:
+            <pre><code>cd project-directory</code></pre>
+          </li>
+          <li>Install the necessary dependencies:
+            <pre><code>npm install</code></pre>
+          </li>
+          <li>Start the development server:
+            <pre><code>npm run dev</code></pre>
+          </li>
+          <li>Visit <code>http://localhost:3000</code> in your browser.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-question" onclick="toggleAnswer(1)">What features are available on the site?</h3>
+      <div class="faq-answer">
+        <p>The site includes several core features:</p>
+        <ul>
+          <li>Responsive Sidebar Navigation.</li>
+          <li>User Authentication (Login/Register modals).</li>
+          <li>Interactive Feedback Form for user input.</li>
+          <li>Modern Aesthetic Design with neon colors.</li>
+          <li>Custom Animations and Hover Effects.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-question" onclick="toggleAnswer(2)">I'm having trouble viewing the navigation menu on mobile. How can I fix this?</h3>
+      <div class="faq-answer">
+        <p>If the navigation menu is not appearing properly on mobile, try the following steps:</p>
+        <ol>
+          <li>Ensure the hamburger menu icon is visible and functional.</li>
+          <li>Check for CSS issues with mobile media queries.</li>
+          <li>Inspect JavaScript handling for errors using the browser console.</li>
+          <li>Reinstall dependencies using <code>npm install</code> and restart the development server.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h3 class="faq-question" onclick="toggleAnswer(3)">Why is the feedback form not submitting my input?</h3>
+      <div class="faq-answer">
+        <p>If your feedback form isn’t working properly:</p>
+        <ol>
+          <li>Check if all required fields (Name, Email, and Message) are filled out.</li>
+          <li>Open the browser console to check for JavaScript errors.</li>
+          <li>Make sure your email input is valid.</li>
+          <li>Verify the <code>script.js</code> file is linked correctly in the HTML file.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
