@@ -1,0 +1,51 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fefefe;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ff69b4;
+            overflow: hidden; 
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            z-index: 1;
+        }
+        .petal {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-image: url('/pngtree-red-rose-petals-cartoon-material-free-download-image_1192220.jpg');
+            background-size: contain;
+            /* background: transparent; */
+            background-repeat: no-repeat;
+            animation: fall linear infinite;
+            
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            25% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+            75% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+            
+        }
