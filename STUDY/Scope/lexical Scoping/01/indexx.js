@@ -17,24 +17,24 @@
 
 
 
-// var naam ="Sleeping";
-// function fun1(){
-//     console.log(naam);
-    // hello ="Abhishek";  /** concept of auto global */
-//     console.log(hello)
-// }
-// fun1();
-// console.log(naam)
+var naam ="Sleeping";
+function fun1(){
+    console.log(naam);
+    hello ="Abhishek";  /** concept of auto global */
+    console.log(hello)
+}
+fun1();
+console.log(naam)
 
-// var naam ="Sleeping";
-// function fun1(){
-//     console.log(naam);
-//     hello ="Abhishek";
+var naam ="Sleeping";
+function fun1(){
+    console.log(naam);
+    hello ="Abhishek";
     
-// }
-// console.log(hello) /**auto global banane ka chance hi ni mila */
-// fun1();
-// console.log(naam)
+}
+console.log(hello) /**auto global banane ka chance hi ni mila */
+fun1();
+console.log(naam)
 
 var naam ="Sleeping";
 function fun2()
