@@ -50,17 +50,32 @@
 
  
 
-function counter(){
-    let count = 0
+// function counter(){
+//     let count = 0
 
-    return function (fn){
-        return ++count + fn()
+//     return function (fn){
+//         return ++count + fn()
+//     }
+// }
+
+// function one(){
+//     return 56;
+// }
+
+// const increment = counter()
+// console.log(increment(one))
+
+
+function person(){
+
+    return{
+        first : function (){
+            return "Abhi"
+        },
+        second : function (){
+            return "Coder"
+        }
     }
 }
-
-function one(){
-    return 56;
-}
-
-const increment = counter()
-console.log(increment(one))
+const output = person()
+console.log(output.first())
