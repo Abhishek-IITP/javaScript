@@ -49,3 +49,18 @@
 // }
 
  
+
+function counter(){
+    let count = 0
+
+    return function (fn){
+        return ++count + fn()
+    }
+}
+
+function one(){
+    return 56;
+}
+
+const increment = counter()
+console.log(increment(one))
