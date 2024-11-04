@@ -18,21 +18,22 @@
 // console.log(newt.innerText)
 
 
-let data=["monitor","laptop","mouse","keayboard","mic"]
-const list = document.getElementById("list")
+// let data=["monitor","laptop","mouse","keayboard","mic"]
+// const list = document.getElementById("list")
 
 // const litag= document.createElement("li")
 // litag.innerText="monitor"
 
 // list.append(litag)
 
-for(let i=0;i<data.length;i++){
-    const litag= document.createElement("li")
-    litag.style.backgroundColor="pink"
-    litag.style.margin=".8rem";
-    litag.style.height="2.5vh"
-    litag.style.padding="1.5rem"
-    litag.style.borderRadius="1.25rem"
-    litag.innerText=data[i]
-    list.append(litag)
-}
+// for(let i=0;i<data.length;i++){
+//     const litag= document.createElement("li")
+//     litag.style.backgroundColor="pink"
+//     litag.style.margin=".8rem";
+//     litag.style.height="2.5vh"
+//     litag.style.padding="1.5rem"
+//     litag.style.borderRadius="1.25rem"
+//     litag.innerText=data[i]
+//     list.append(litag)
+// }
+
