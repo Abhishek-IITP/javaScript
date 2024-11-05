@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paper1, .paper2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 50vw;
+    background-color: rgb(97, 97, 97);
+    margin: 30px;
+
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    width: 8vw;
+    margin: 50px;
+    height: 5vh;
+    background-color: whitesmoke;
+}
