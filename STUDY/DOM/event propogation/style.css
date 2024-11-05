@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#mainDiv{
+    background-color: rgb(118, 113, 113);
+}
+.childDiv{
+    background-color: rgb(96, 102, 149);
+    width: 200px;
+    margin:  30px;
+    height: 300px;
+}
