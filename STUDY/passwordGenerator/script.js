@@ -8,6 +8,8 @@ const low=document.getElementById('low')
 const number=document.getElementById('num')
 const symbol=document.getElementById('sym')
 
+const copyBtn=document.getElementById('copyBtn');
+
 rangeVal.innerText=slider.value
 slider.addEventListener('input',(e)=>{
 
@@ -50,6 +52,14 @@ btn.addEventListener('click',()=>{
 
 })
 
+copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(newPass.innerText).then(() => {
+        alert("Password copied to clipboard!");
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+});
+
 // let num ='1234567890';
 // let newnum = '';
 // let newber=''
@@ -73,7 +83,7 @@ btn.addEventListener('click',()=>{
 // console.log(newnum);
 
 
-let num = '0123456789';
+// let num = '0123456789';
 // let newnum = '';
 
 // // Ensure the first digit is 6, 7, 8, or 9
@@ -87,3 +97,5 @@ let num = '0123456789';
 // }
 
 // console.log(newnum);
+
+
