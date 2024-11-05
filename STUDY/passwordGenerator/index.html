@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="container">
+    <div class="wrapper">
+        <h1 id="newPass"></h1>
+        <input type="range" id="range" min="8" max="20" value="8">
+        <p id="rangeVal"></p>
+
+        <div>
+        <input type="checkbox" name="Captial" id="up">
+        <label for="Captial">Upperase</label>
+        <br>
+        <input type="checkbox" name="Small"   id="low">
+        <label for="Small">Lowercase</label>
+        <br>
+        <input type="checkbox" name="Number"  id="num">
+        <label for="Number">Number</label>
+        <br>
+        <input type="checkbox" name="Symbol"  id="sym">
+        <label for="Symbol">Symbol</label>
+        <br>
+        </div>
+        <button id="gen">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
