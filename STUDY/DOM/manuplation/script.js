@@ -19,12 +19,30 @@ const body = document.getElementById('container')
 
 // })
 
-btn.addEventListener("click", ()=>{
+// btn.addEventListener("click", ()=>{
     
-    const ischange =confirm("which  color ?");
-    if (ischange==true){
-        const colorName = prompt("which color?");
-        body.style.backgroundColor=`${colorName}`;
-    }
+//     const ischange =confirm("which  color ?");
+//     if (ischange==true){
+//         const colorName = prompt("which color?");
+//         body.style.backgroundColor=`${colorName}`;
+//     }
 
+// })
+
+
+// btn.addEventListener("click", ()=>{
+    
+    
+//     const colorName = prompt("which color?");
+//     body.style.backgroundColor=`${colorName}`;
+    
+// })
+
+const submit= document.getElementById('submit');
+const colorName= document.getElementById('colorname');
+
+submit.addEventListener("click",(e)=>{
+    e.preventDefault();
+    body.style.backgroundColor=`${colorName.value}`;
+    
 })
