@@ -3,15 +3,13 @@ const btn2=document.getElementById("btn1");
 // const body= document.getElementById("container")
 
 
-function random(number){
+function rand(number){
     return Math.floor(Math.random()*(number+1));
 }
-
-btn.addEventListener("click" , () => {
-    const randcolor = `rgb(${random(255)} ${random(255)} ${random(255)})`
-    document.body.style.backgroundColor = randcolor;
+btn.addEventListener('click',()=>{
+    const randomval=`rgb(${rand(255)} ${rand(255)} ${rand(255)})`
+    document.body.style.backgroundColor=randomval;
 })
-
-btn1.addEventListener("click", ()=>{
-    document.body.style.backgroundColor= "white";
+btn2.addEventListener('click',()=>{
+    document.body.style.backgroundColor="white";
 })
