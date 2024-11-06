@@ -3,29 +3,28 @@ const paper2=document.querySelector('.paper2')
 const items=document.querySelectorAll('.item1');
 
 
+items.forEach((item)=>{
+    item.addEventListener('dragstart',(e)=>{
+        let drop=e.target;
+        paper2.addEventListener('dragover',(e)=>{
+            e.preventDefault();
+            e.stopPropagation();
+        })
+        paper2.addEventListener('drop',()=>{
+            paper2.append(drop)
+            drop='';
+        })
+        paper1.addEventListener('dragover',(e)=>{
+            e.preventDefault();
+            e.stopPropagation();
 
-items.forEach((item) => {
-    console.log(item)
-    item.addEventListener('dragstart', (e) => {
-        let drop = e.target;
-        paper2.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-        });
-        paper2.addEventListener('drop', () => {
-            paper2.append(drop);
-            drop = '';
-        });
-        paper1.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-        });
-        paper1.addEventListener('drop', () => {
+        })
+        paper1.addEventListener('drop',()=>{
             paper1.append(drop);
-            drop = '';
-        });
-    });
-});
+            drop='';
+        })
+    })
+})
 
 
 // const paper1= document.querySelector('.paper1');
