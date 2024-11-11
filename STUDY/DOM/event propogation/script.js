@@ -36,6 +36,6 @@ mainDiv.addEventListener('click',(e)=>{
     console.log('main')
 })
 document.body.addEventListener('click',(e)=>{
-    // e.stopPropagation()
+    e.stopPropagation()
     console.log("body")
 })
