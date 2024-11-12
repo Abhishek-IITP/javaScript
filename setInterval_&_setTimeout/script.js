@@ -80,11 +80,27 @@
 // console.log('third') /**script tag ko h1 ke upper rakho aur jaadu dekho */
 
 
-function fun1(){
-    for (let i=0; i<5;i++){ //replace let with var see the difference
-        setTimeout(() => {
-            console.log(i)
-        }, i*1000);
-    }
-}
-fun1();
+// function fun1(){
+//     for (let i=0; i<5;i++){ //replace let with var see the difference
+//         setTimeout(() => {
+//             console.log(i)
+//         }, i*1000);
+//     }
+// }
+// fun1(); 
+
+console.log('starting')
+setTimeout(() => {
+    console.log('1')
+    
+}, 5000);
+setTimeout(() => {
+    console.log('2')
+    
+}, 3000);
+setTimeout(() => {
+    console.log('3')
+    
+}, );
+
+console.log('ending')
