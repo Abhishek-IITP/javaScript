@@ -78,3 +78,13 @@
 
 // }
 // console.log('third') /**script tag ko h1 ke upper rakho aur jaadu dekho */
+
+
+function fun1(){
+    for (let i=0; i<5;i++){ //replace let with var see the difference
+        setTimeout(() => {
+            console.log(i)
+        }, i*1000);
+    }
+}
+fun1();
