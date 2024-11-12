@@ -53,8 +53,28 @@
 //     console.log('first')
 // },5000)
 
-console.log('first')
-setTimeout(function(){
-    console.log('second')
-},1000)
-console.log('third')
+// console.log('first')
+// setTimeout(function(){
+//     console.log('second')
+// },1000)
+// console.log('third')
+
+// console.log('first')
+// console.log('second')
+// for(let i=0; i<10000000000; i++){
+
+// } /**es case me output :- first second aur kaafi der ke baad third aayega jb tk loop pura run ni kr jta */
+
+// function abhi(){
+//     for(let i=0; i<10000000000; i++){
+
+//     }
+// } /**es case me output:- first second third aur bich ka loop background me chalta rahega */ //type async function
+// console.log('third')
+
+// console.log('first')
+// console.log('second')
+// for(let i=0; i<10000000000; i++){
+
+// }
+// console.log('third') /**script tag ko h1 ke upper rakho aur jaadu dekho */
