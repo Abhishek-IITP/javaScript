@@ -14,7 +14,7 @@ function orderFood(item, cb2){
             cb2(id);
     }, 5000);
 }
-function payment(item,id , cb3){
+function payments(item,id , cb3){
     console.log(`payment for ${item} with id no :- ${id}`);
     setTimeout(function timer3(){
         let status = true;
@@ -26,7 +26,7 @@ let abhi=searchFood('burger' ,function fun1( item,data){
     console.log(data)
     orderFood(item,function fun2(orderId){
         console.log('order created successfully with id no :-',orderId);
-        payment(item,orderId,function fun3(response){
+        payments(item,orderId,function fun3(response){
             console.log('payment successfull with status', response)
         })
     })
