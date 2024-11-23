@@ -3,7 +3,7 @@ function searchFood(item){
             console.log('Searching start for', item , '.........')
             setTimeout(function timer1(){
                 let data = `list of ${item}`
-                res(data)
+                res({item,data});
                 
             },3000);
         
@@ -14,21 +14,46 @@ function orderFood(item){
         console.log('select' , item);
     setTimeout(function timer2() {
             let id=Math.floor(Math.random()*9999999);
-            res(`your order id is :- ${id}`);
-    }, 5000);
+            res({item,id});
+    }, 4000);
 
-    })
+    });
     
 }
 
-let order=orderFood("pizza").then(function consumer1(item2){
-    console.log(item2)
-})
+function payments(item,id){
+    return new Promise(function fun3(res,rej){
+        console.log(`payment for ${item} with id no :- ${id}`);
+            
+    setTimeout(function timer3(){
+        let status = true;
+        res(status);
+    }, 5000);
+    })
 
+}
 
 let result =searchFood("pizza").then(function consumer1(item){
-    console.log(item)
+    console.log(item.data);
+    return orderFood(item.item)
 })
-// let payment1= payment('Pizza').then(function(item3){
-//     console.log(item3)
-// })
+.then(function consumer2(id){
+    console.log("order created successfully with id no ",id.id);
+    return payments(id.item,id.id)
+})
+.then(function consumer3(status){
+    console.log(status)
+})
+
+
+// let result =searchFood("pizza").then(function consumer1(item){
+//     console.log(item.data);
+//     orderFood(item.item).then(function consumer2(id){
+//         console.log('your order id is :-',id);
+//         payments(item.item,id).then(function consumer3(status){
+//             console.log(status);
+//         })
+//     });
+
+// });
+
