@@ -1,3 +1,45 @@
+// async function fun1(){
+//     console.log('first')
+//     return "hello"
+// }
+// let x= fun1()
+// console.log(x)
+
+
+// function fun2(){
+    // return Promise.resolve('hello')
+    // return new Promise(function(res,rej){
+    //     res('abhi')
+    // })
+
+// }
+// let y =fun2();
+// console.log(y)
+
+// async function fun1(){
+//     return "kumar"
+// }
+// fun1().then((data)=>{
+//     console.log(data)
+// })
+
+// function pro(){
+//     return new Promise(function pro1(res,rej){
+//         res('ABhishek')
+//     })
+// }
+
+// async function fun1() {
+//     let x = await pro()
+//     console.log(x)
+//     /**fun1() kuch return krega tb na .then wale portion me kuch output aayega */
+//     return "abhiiiiiii"
+// }
+
+// fun1().then((data)=>{
+//     console.log('abhi',data)
+// })
+
 function searchFood(item){
     return new Promise(function fun1(res,rej){
             console.log('Searching start for', item , '.........')
@@ -60,44 +102,3 @@ foodOrder("Biryani")
 // })
 
 
-// async function fun1(){
-//     console.log('first')
-//     return "hello"
-// }
-// let x= fun1()
-// console.log(x)
-
-
-// function fun2(){
-    // return Promise.resolve('hello')
-    // return new Promise(function(res,rej){
-    //     res('abhi')
-    // })
-
-// }
-// let y =fun2();
-// console.log(y)
-
-// async function fun1(){
-//     return "kumar"
-// }
-// fun1().then((data)=>{
-//     console.log(data)
-// })
-
-// function pro(){
-//     return new Promise(function pro1(res,rej){
-//         res('ABhishek')
-//     })
-// }
-
-// async function fun1() {
-//     let x = await pro()
-//     console.log(x)
-//     /**fun1() kuch return krega tb na .then wale portion me kuch output aayega */
-//     return "abhiiiiiii"
-// }
-
-// fun1().then((data)=>{
-//     console.log('abhi',data)
-// })
