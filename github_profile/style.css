@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    color: white;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+}
+h1{
+    text-align: center;
+    background: black;
+    color: white;
+    margin: 1.5rem;
+}
+
+#find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .61rem;
+    padding: 10px;
+}
+
+#profile{
+    text-align: center;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 1.5px 1px white;
+}
+
+#btn{
+    text-align: center;
+    padding: 0 1rem;
+    height: 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 1.5px 1px white;
+    cursor: pointer;
+}
+#card{
+    border: 0.1px solid white;
+    height: 35vh;
+    width: 30vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    color: white;
+    position: relative;
+    top: 2rem;
+    left: 33.5rem;
+}
+#card>img{
+    height: 18vh;
+    width: 10vw;
+    border-radius: 15rem 15rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 2rem;
+    left: .51rem;
+}
+#card>h2,h3{
+    width: 200px;
+    font-size: small;
+    position: relative;
+    top: 2.9rem;
+    left: 1rem;
+    line-height: 1.2rem;
+}
+
+#data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+}
+#data>p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: .81rem;
+    position: relative;
+    left: 5rem;
+    top: -10rem;
+}
+#btn2{
+    height: 2.25rem;
+    position: relative;
+    left: 16rem;
+    top: -8.75rem;
+    display: inline-block;
+    background-color: #007bff; 
+    color: #fff;             
+    text-decoration: none;    
+    padding: 10px 20px;     
+    border-radius: 5px;       
+    font-size: 16px;          
+    margin-top: 15px;        
+    transition: background-color 0.3s ease; 
+}
+#btn2:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #ff4d4d;          
+    font-size: 18px;        
+    font-weight: bold;       
+    text-align: center;      
+    margin-top: 20px;       
+    font-family: Arial, sans-serif; 
+    background-color: #ffe6e6;
+    padding: 10px;           
+    border: 1px solid #ff9999; 
+    border-radius: 5px; 
+    }
