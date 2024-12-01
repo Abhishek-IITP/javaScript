@@ -5,6 +5,8 @@
 // let x= fun1()
 // console.log(x)
 
+const { type } = require("os");
+
 
 // function fun2(){
     // return Promise.resolve('hello')
@@ -78,6 +80,7 @@ function payments(item,id){
 
 async function foodOrder(item){
     let res1 = await searchFood(item);
+    console.log(`list of ${item}`)
     let res2= await orderFood(res1.item);
     console.log("order created successfully with id no ",res2.id);
     let res3= await payments(res2.item, res2.id)
