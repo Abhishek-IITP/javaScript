@@ -5,10 +5,11 @@ async function fetchUser(userId) {
   let response = await fetch(`https://api.github.com/users/${userId}`);
   let result = await response.json();
   console.log(result);
-  displayUser(result);
+  displayUser(result);    
 }
 
 btn.addEventListener("click", () => {
+    document.getElementById('card').innerHTML=`<div class="loader"></div>`
   let abhi = user.value;
   console.log(abhi);
   fetchUser(abhi);
@@ -24,12 +25,14 @@ function displayUser(result) {
     public_repos,
     html_url,
   } = result;
-
+  
   if (avatar_url){
+    
+
     document.getElementById("card").innerHTML = `      
     <img src=${avatar_url} alt="">
     <h2>${name}</h2>
-    <h3>${bio}</h3>
+    <h3>${bio ? `<h3>${bio}</h3>` : ""}</h3>
     <div id="data">
         <p>Followers 
             <span>${followers}</span>
@@ -48,5 +51,6 @@ function displayUser(result) {
   else{
     document.getElementById("card").innerHTML =`<p class="error-message">User not available</p>`
   }
+
 ;
 }
