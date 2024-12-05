@@ -32,7 +32,7 @@ function displayImg(res){
         let div=document.createElement('div');
         div.setAttribute('id',"card");
         div.innerHTML=`
-            <a class='link' href='${data.links.html}' target>
+            <a class='link' href='${data.links.html}' target= '_blank'>
             <div id="info">
                 <img src=${data.user.profile_image.large} alt="">
                 <h3>${data.user.username}</h3>
