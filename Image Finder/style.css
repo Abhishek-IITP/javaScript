@@ -7,14 +7,11 @@
 body{
     height: 100%;
     width: 100%;
-    background: #ffffff;
-    color: rgb(11, 11, 11);
+    background: #c4d08e;
     font-family: sans-serif;
-    /* overflow: hidden; */
 }
 h1{
     text-align: center;
-    /* background: black; */
     color: rgb(0, 0, 0);
     margin: 1.5rem;
 }
@@ -65,9 +62,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem 0;
-    
-    /* margin: auto; */
-    /* margin-top: 1rem; */
+    color: white;
 }
 #card{
     margin: 3rem 4.5rem ;
@@ -78,10 +73,12 @@ h1{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #88edcf;
+    background-color: #734301;
+    
     border-radius: 8px;
 }
 #info{
+    color: white;
     height: 15vh;
     width: 18vw;
     display: flex;
@@ -90,9 +87,7 @@ h1{
     align-items: center;
     flex-direction: row;
     position: relative;
-    /* top: -2.25rem; */
     left: 1.75rem;
-    /* border: 5px solid black; */
 }
 #info>img{
     height: 8vh;
@@ -123,9 +118,10 @@ h1{
 #detail>p{
     /* border: 5px solid black; */
     height: 13vh; 
+    color: white;
     width: 100%; 
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: large;
     padding: 0.42rem .51rem;
