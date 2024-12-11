@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f9f9f9;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.complete{
+    text-decoration: line-through;
+}
+.left{
+    height: 100vh;
+    aspect-ratio: 2/5;
+    border-right: 2px  solid rgb(57, 55, 55);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    animation: top-in
+    2s ;
+}
+@keyframes top-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.top{
+    background-color: #ffffff;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 1.52rem;
+}
+.top>p{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large; 
+}
+
+.top>input{
+    height: 4.5vh;
+    width: 16vw;
+    border-radius: 1.25rem;
+    border: none;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    transition: 0.4s all ease-in-out;
+}
+.top>input:hover{
+    background-color: #dedcdc;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    left: .51rem;
+}
+.events{
+    display: flex;
+    flex-direction: column;
+}
+.middle>h1{
+    font-size: large;
+    font-weight: 700;
+    font-family: sans-serif;
+    position: relative;
+    left: .41rem;
+
+}
+.events>a{
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 1rem .5rem;
+    font-family: sans-serif;
+    width: 19.5vw;
+    border-radius: 1.2rem;
+    transition: 0.4s all ease-in-out;
+}
+
+.events>a:hover{
+    background-color: #dedcdc;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    position: relative;
+    left: .61rem;
+    top: 18rem;
+    cursor: pointer;
+}
+.end>p{
+    display: flex;
+    gap: .51rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    width: 68vw;
+    position: relative;
+    top: -21.5rem;
+    padding: 4rem;
+    left: 5.6rem;
+    animation-duration: 2s;
+    animation-name: nav-in;
+}
+@keyframes nav-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.navbar>h1{
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.info{
+    display: flex;
+    gap: 1rem;
+}
+.info>button{
+    width: 7.5vw;
+    height: 4vh;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 1rem;
+    border-radius: 1.25rem;
+}
+.add>button{
+    width: 7.5vw;
+    height: 4vh;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 1rem;
+    border-radius: 1.25rem;
+}
+.info>button:hover{
+    background-color: #dedcdc;
+    cursor: pointer;
+}
+.add>button:hover{
+    background-color: #dedcdc;
+    cursor: pointer;}
+.info>i{
+    position: relative;
+    top: .7rem;
+    scale: 1.5;
+}
+.todoo{
+    min-height: 80vh;
+    min-width: 50vw;
+    margin: auto;
+    position: relative;
+    top: 8rem;
+    right: 52rem;
+}
+
+.todoo>h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+    animation-duration: 1.5s;
+    animation-name: slide-in;
+}
+@keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 150% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    top: 3rem;
+    animation: add-in
+     2s;
+}
+@keyframes add-in {
+    from {
+      translate: 200vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.add>input{
+    height: 6vh;
+    width: 20vw;
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1.25rem;
+}
+#all{
+    position: relative;
+    top: 5rem;
+    left: 5px;
+    min-height: 25vh;
+    min-width: 25vw;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;   
+}
+.singleTodo{
+    height: 10vh;
+    min-width: 15vw;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: single-in 2s;
+}
+@keyframes single-in {
+    from {
+      translate: 200vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.singleTodo>h2{
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: 0.3s all ease-in-out;
+}
+.singleTodo>h2:hover{
+    border-bottom: 1.5px solid black;
+}
+
+.singleTodo>button{
+    width: 10.5vw;
+    height: 4vh;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* padding: 0 1rem; */
+    border-radius: 1.25rem;
+    transition:  .4s all ease-in-out;
+}
+.singleTodo>button:hover{
+    background-color: #de4f4f;
+    color: white;
+    cursor: pointer;
+}
