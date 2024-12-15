@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(namroud-gorguis-9OEE8Ktcaac-unsplash.jpg);
+}
+.wrapper{
+    min-height:100vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3.9em;
+    gap: 3rem;
+}
+.top{
+    display: flex;
+    gap: 3rem;
+    /* height: 9vh; */
+}
+.top>h1{
+    color: rgb(245, 242, 242);
+    background-color: rgb(59, 68, 65);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    padding: 1rem;
+}
+.top>button{
+    padding: 0.4rem .51rem;
+    border: none;
+    background: transparent;
+    color: white;
+    background-color: rgb(59, 68, 65);
+    scale: 3;
+    position: relative;
+    top: 1.4rem;
+    height: 23px;
+    width: 29px;
+}
+
+
+.note{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(244, 200, 140);
+    font-size: x-large;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    outline: none;
+    padding: 10px;
+}
+.note::-webkit-scrollbar{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.allnotes{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.9rem;
+    flex-wrap: wrap;
+
+}
+#txtA{
+    font-size: 1.3rem;
+    background-color: #e2d88b;
+}
+.singleNote{
+    background-color: #e39e44;
+    border-radius: 10px;
+}
+
+.editBtn , .removeBtn{
+    background-color: #f08401e1;
+    color: aliceblue;
+    border: none;
+    margin: 10px;
+    font-size: 1.25rem;
+    padding: 9px;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.editBtn , .removeBtn:hover{
+    /* background-color: rgb(240, 141, 4); */
+    cursor: pointer;
+}
+
+.date{
+    font-size: 1.2rem;
+    margin: 10px;
+
+}
