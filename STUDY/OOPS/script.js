@@ -19,16 +19,17 @@ const { pid } = require("process");
 // obj.printName() ;
 
 
-function Products(name,price){
-    this.name=name;
-    this.price=price;
-    this.productName= function(){
-        console.log(this.name)
-    }
-}
-let prod1= new Products("samsung S24 ultra" , 120000);
-let prod2= new Products('iPhone 16 pro max', 150000);
-console.log(prod1.productName())
+// function Products(name,price){
+//     this.name=name;
+//     this.price=price;
+//     // this.productName= function(){
+//     //     console.log(this.name)
+//     // }
+// }
+// let prod1= new Products("samsung S24 ultra" , 120000);
+// let prod2= new Products('iPhone 16 pro max', 150000);
+// // console.log(prod1.productName())
+// console.log(prod1)
 // console.log(prod2)
 
 /** 'NEW' KEYWORDS 4 STEPS
@@ -38,12 +39,15 @@ console.log(prod1.productName())
  * RETURN OBJECT
   */
 
-// class Products{
-//     constructor(name,price){
-//         this.name=name;
-//         this.price=price;
-//     }
-// }
+class Products{
+    category='electronics';
+    constructor(name,price){
+        this.name=name;
+        this.price=price;
+    }
+}
 
-// let p1= new Products('nokia 3310' ,3000)
-// console.log(p1)
+let p1= new Products('nokia 3310' ,3000)
+let p2= new Products('nokia 395' ,1000)
+console.log(p1)
+console.log(p2)
